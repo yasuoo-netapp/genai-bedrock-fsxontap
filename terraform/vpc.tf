@@ -18,7 +18,7 @@ data "aws_availability_zones" "available" {
   state = "available"
 
   filter {
-    name   = "group-name"
+    name   = "region-name"
     values = [var.aws_region]
   }
 }
